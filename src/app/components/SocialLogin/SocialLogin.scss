@@ -1,0 +1,13 @@
+.btnSecondary{
+    background: #2699FB !important;
+    border: 1px solid #2699FB !important;
+    color: var(--bs-white) !important;
+    &:hover{
+        background: var(--bs-white) !important;
+        color: #2699FB !important;
+        border: 1px solid #2699FB !important;
+    }
+}
+.social_login {
+	max-width: 257px;
+}

@@ -1,0 +1,31 @@
+.btnForm{
+  border-radius: 25px !important;
+  // padding: 9.5px 15px !important;
+}
+
+.auth {
+  .right_col {
+    .btnPrimary{
+      background: var(--bs-auth-secondary) !important;
+      border: 1px solid var(--bs-auth-secondary) !important;
+      color: var(--bs-light) !important;
+      &:hover{
+        background: transparent !important;
+        color: var(--bs-auth-secondary) !important;
+        border: 1px solid var(--bs-auth-secondary) !important;
+      }
+      &:active{
+        background: var(--bs-auth-secondary) !important;
+        border: 1px solid var(--bs-auth-secondary) !important;
+        color: var(--bs-light) !important;
+       
+      }
+      &:focus{
+        background: var(--bs-auth-secondary) !important;
+        border: 1px solid var(--bs-auth-secondary) !important;
+        color: var(--bs-light) !important;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.required:after {
+    color: var(--bs-text-light);
+    padding-left: 0;
+}
+
+// .customDatePicker{
+//     .react-datepicker-wrapper{
+//         width: 100%;
+//         i{
+//             font-size: 18px;
+//             top: 48%;
+//             transform: translateY(-50%);
+//             color: var(--bs-primary);
+//             padding: 0;
+//             left: 14px;
+//         }
+//         input{
+//             padding-left: 40px;
+//             border-radius: 10px;
+//         }
+//     }
+// }
+
+
+.tag-field {
+    border: 1px solid #ccc !important;
+    color: var(--bs-danger) !important;
+    border-radius: 10px;
+
+    >span {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tags-input {
+        background-color: var(--bs-primary) !important;
+        border-radius: 2px !important;
+        border: 1px solid var(--bs-primary) !important;
+        color: var(--bs-white) !important;
+        display: inline-block;
+        font-size: 14px !important;
+        font-weight: 400;
+        padding: 0px 8px !important;
+        border-radius: 8px !important;
+        margin-bottom: 0;
+        margin-right: 0;
+        white-space: nowrap;
+
+        a {
+            color: var(--bs-white);
+        }
+    }
+
+    .react-tagsinput-input {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        max-width: 150px;
+        background: #eee;
+        border-radius: 5px;
+    }
+}
+
+.datePickerInput .react-date-picker__inputGroup__divider+.react-date-picker__button__icon {
+    order: -1;
+}
+
+.datePickerInput .react-date-picker__wrapper {
+
+
+    &.react-date-picker__wrapper {
+        border: none;
+    }
+}
+
+.fieldBox {
+    position: relative;
+
+    .fixedDomainBox {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--bs-white);
+        padding-left: 10px;
+    }
+
+    .domainFieldClass {
+        padding-right: 230px;
+    }
+}

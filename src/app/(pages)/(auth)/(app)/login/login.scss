@@ -1,0 +1,22 @@
+.logInForm{
+    .fgPassword{
+        a{
+            span{
+                border-bottom: 1px solid var(--bs-dark);
+                display: inline-block;
+            }
+        }
+    }
+}
+.separatorColor{
+    &::after {
+		border: 1px solid var(--bs-seventy);
+	}
+	&::before {
+		border: 1px solid var(--bs-seventy);
+	}
+}
+
+.socialLogin{
+	max-width: 257px;
+}

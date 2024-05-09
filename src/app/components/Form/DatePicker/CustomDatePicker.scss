@@ -1,0 +1,21 @@
+.customDatePicker {
+    position: relative;
+	.react-datepicker-wrapper {
+		width: 100%;
+
+		i {
+			font-size: 18px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: var(--bs-primary);
+			padding: 0;
+			left: 14px;
+			line-height: 0;
+		}
+
+		input {
+			padding-left: 40px;
+			border-radius: 8px;
+		}
+	}
+}
