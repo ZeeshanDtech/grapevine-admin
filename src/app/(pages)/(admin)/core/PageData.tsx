@@ -70,6 +70,8 @@ const PageTitle: FC<Props & WithChildren> = ({children, description, breadcrumbs
   }, [description])
 
   useEffect(() => {
+    console.log({breadcrumbs});
+    
     if (breadcrumbs) {
       setPageBreadcrumbs(breadcrumbs)
     }
@@ -78,7 +80,7 @@ const PageTitle: FC<Props & WithChildren> = ({children, description, breadcrumbs
     }
   }, [breadcrumbs])
 
-  return <></>
+  return <>{description}</>
 }
 
 const PageDescription: FC<WithChildren> = ({children}) => {

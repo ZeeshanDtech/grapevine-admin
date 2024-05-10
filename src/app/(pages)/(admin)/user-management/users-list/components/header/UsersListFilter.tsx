@@ -1,18 +1,19 @@
+"use client"
 import {useEffect, useState} from 'react'
-import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components'
-import {initialQueryState, KTIcon} from '../../../../../../../_metronic/helpers'
+// import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components'
+import {initialQueryState, KTIcon} from '../../../../helpers'
 import {useQueryRequest} from '../../core/QueryRequestProvider'
 import {useQueryResponse} from '../../core/QueryResponseProvider'
 
 const UsersListFilter = () => {
   const {updateState} = useQueryRequest()
-  const {isLoading} = useQueryResponse()
+  // const {isLoading} = useQueryResponse()
   const [role, setRole] = useState<string | undefined>()
   const [lastLogin, setLastLogin] = useState<string | undefined>()
 
-  useEffect(() => {
-    MenuComponent.reinitialization()
-  }, [])
+  // useEffect(() => {
+  //   MenuComponent.reinitialization()
+  // }, [])
 
   const resetData = () => {
     updateState({filter: undefined, ...initialQueryState})
@@ -29,7 +30,7 @@ const UsersListFilter = () => {
     <>
       {/* begin::Filter Button */}
       <button
-        disabled={isLoading}
+        // disabled={isLoading}
         type='button'
         className='btn btn-light-primary me-3'
         data-kt-menu-trigger='click'
@@ -102,7 +103,7 @@ const UsersListFilter = () => {
           <div className='d-flex justify-content-end'>
             <button
               type='button'
-              disabled={isLoading}
+              // disabled={isLoading}
               onClick={filterData}
               className='btn btn-light btn-active-light-primary fw-bold me-2 px-6'
               data-kt-menu-dismiss='true'
@@ -111,7 +112,7 @@ const UsersListFilter = () => {
               Reset
             </button>
             <button
-              disabled={isLoading}
+              // disabled={isLoading}
               type='button'
               onClick={resetData}
               className='btn btn-primary fw-bold px-6'

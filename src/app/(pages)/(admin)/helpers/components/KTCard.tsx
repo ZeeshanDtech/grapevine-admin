@@ -1,11 +1,11 @@
-import {FC} from 'react'
+import React, {FC} from 'react'
 import clsx from 'clsx'
 import {WithChildren} from '../react18MigrationHelpers'
 
 // Wrapper on html card:
 // https://preview.keenthemes.com/metronic8/demo1/documentation/base/cards.html
 
-type Props = {
+interface Props {
   className?: string
   shadow?: boolean
   flush?: boolean // https://preview.keenthemes.com/metronic8/demo1/documentation/base/cards.html#flush

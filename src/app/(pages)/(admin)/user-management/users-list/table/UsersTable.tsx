@@ -1,3 +1,4 @@
+'use client'
 import {useMemo} from 'react'
 import {useTable, ColumnInstance, Row} from 'react-table'
 import {CustomHeaderColumn} from '../table/columns/CustomHeaderColumn'
@@ -7,9 +8,23 @@ import {usersColumns} from './columns/_columns'
 import {User} from '../core/_models'
 import {UsersListLoading} from '../components/loading/UsersListLoading'
 import {UsersListPagination} from '../components/pagination/UsersListPagination'
-import {KTCardBody} from '../../../../../../_metronic/helpers'
+import {KTCardBody} from '../../../helpers'
 
 const UsersTable = () => {
+  // const users = [
+  //   {
+  //     id: 1,
+  //     name: "John Doe",
+  //     email: "john@example.com",
+  //     role: "Admin",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Jane Doe",
+  //     email: "jane@example.com",
+  //     role: "User",
+  //   },
+  // ];
   const users = useQueryResponseData()
   const isLoading = useQueryResponseLoading()
   const data = useMemo(() => users, [users])
@@ -18,7 +33,8 @@ const UsersTable = () => {
     columns,
     data,
   })
-
+  
+  
   return (
     <KTCardBody className='py-4'>
       <div className='table-responsive'>

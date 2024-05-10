@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC, useEffect} from 'react'
 import {useMutation, useQueryClient} from 'react-query'
-import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components'
-import {ID, KTIcon, QUERIES} from '../../../../../../../_metronic/helpers'
+// import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components'
+import {ID, KTIcon, QUERIES} from '../../../../helpers'
 import {useListView} from '../../core/ListViewProvider'
 import {useQueryResponse} from '../../core/QueryResponseProvider'
 import {deleteUser} from '../../core/_requests'
@@ -13,24 +13,24 @@ type Props = {
 
 const UserActionsCell: FC<Props> = ({id}) => {
   const {setItemIdForUpdate} = useListView()
-  const {query} = useQueryResponse()
+  // const {query} = useQueryResponse()
   const queryClient = useQueryClient()
 
-  useEffect(() => {
-    MenuComponent.reinitialization()
-  }, [])
+  // useEffect(() => {
+  //   MenuComponent.reinitialization()
+  // }, [])
 
   const openEditModal = () => {
     setItemIdForUpdate(id)
   }
 
-  const deleteItem = useMutation(() => deleteUser(id), {
-    // 💡 response of the mutation is passed to onSuccess
-    onSuccess: () => {
-      // ✅ update detail view directly
-      queryClient.invalidateQueries([`${QUERIES.USERS_LIST}-${query}`])
-    },
-  })
+  // const deleteItem = useMutation(() => deleteUser(id), {
+  //   // 💡 response of the mutation is passed to onSuccess
+  //   onSuccess: () => {
+  //     // ✅ update detail view directly
+  //     queryClient.invalidateQueries([`${QUERIES.USERS_LIST}-${query}`])
+  //   },
+  // })
 
   return (
     <>
@@ -61,7 +61,7 @@ const UserActionsCell: FC<Props> = ({id}) => {
           <a
             className='menu-link px-3'
             data-kt-users-table-filter='delete_row'
-            onClick={async () => await deleteItem.mutateAsync()}
+            // onClick={async () => await deleteItem.mutateAsync()}
           >
             Delete
           </a>

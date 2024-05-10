@@ -6,6 +6,8 @@ import { Content } from './components/layout/content'
 import { FooterWrapper } from './components/layout/footer'
 import { ScrollTop } from './components/layout/scroll-top'
 import { PageDataProvider } from './PageData'
+import '../../assets/scss/style.scss';
+import '../../assets/scss/global.scss'
 // import {Outlet, useLocation} from 'react-router-dom'
 // import {HeaderWrapper} from './components/header'
 // import {RightToolbar} from '../partials/layout/RightToolbar'
@@ -39,7 +41,9 @@ const AdminLayout = ({
               <div className='d-flex flex-column flex-column-fluid'>
                 <ToolbarWrapper />
                 {/* <Content> */}
-                  {children}
+                  <div className="p-30px">
+                    {children}
+                  </div>
                   {/* <Outlet /> */}
                 {/* </Content> */}
               </div>

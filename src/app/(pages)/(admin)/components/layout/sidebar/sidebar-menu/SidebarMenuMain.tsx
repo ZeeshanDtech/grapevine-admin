@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
+"use client"
 import React from 'react'
 // import {useIntl} from 'react-intl'
 import {KTIcon} from '../../../../helpers'
@@ -100,7 +101,7 @@ const SidebarMenuMain = () => {
         <SidebarMenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />
       </SidebarMenuItemWithSub>
       <SidebarMenuItem
-        to='/apps/user-management/users'
+        to='/user-management'
         icon='abstract-28'
         title='User management'
         fontIcon='bi-layers'

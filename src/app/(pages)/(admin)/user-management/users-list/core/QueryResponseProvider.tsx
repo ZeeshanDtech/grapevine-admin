@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+"use client"
 import {FC, useContext, useState, useEffect, useMemo} from 'react'
 import {useQuery} from 'react-query'
 import {
@@ -9,7 +10,7 @@ import {
   QUERIES,
   stringifyRequestQuery,
   WithChildren,
-} from '../../../../../../_metronic/helpers'
+} from '../../../helpers'
 import {getUsers} from './_requests'
 import {User} from './_models'
 import {useQueryRequest} from './QueryRequestProvider'
