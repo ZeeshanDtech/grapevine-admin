@@ -17,7 +17,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" data-bs-theme="light">
 			<body className={inter.className}>
 					<NextTopLoader
 					color="#2299DD"

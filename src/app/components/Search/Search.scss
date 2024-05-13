@@ -1,0 +1,23 @@
+.searchBox {
+    position: relative;
+
+    input {
+        padding: 7px 24px 7px 47px;
+        background-color: rgb(35 42 58 / 12%);
+        font-size: 14px;
+        font-weight: 400;
+
+        &.psWithOutIcon {
+            padding-left: 24px;
+        }
+    }
+
+    i {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 16px !important;
+    }
+}

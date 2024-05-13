@@ -1,0 +1,82 @@
+.data-table-wraper {
+    background: #F4F6F8;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 12px;
+
+    .table {
+        thead {
+            tr {
+                td {
+                    white-space: nowrap;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:hover {
+                    box-shadow: 0px 0 15px #c4c4c4;
+                }
+            }
+        }
+
+        tr {
+            td {
+                background-color: var(--bs-white);
+                vertical-align: middle;
+
+                &:first-child {
+                    border-radius: 4px 0 0 4px;
+                    padding-left: 0.75rem;
+                }
+
+                &:last-child {
+                    border-radius: 0 4px 4px 0;
+                    padding-right: 0.75rem;
+                }
+
+                &:nth-child(2) {
+                    min-width: 240px;
+                }
+            }
+
+            .actions {
+                opacity: 0;
+            }
+
+            &:hover {
+                .actions {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .transparent-icon-btn {
+            .dropdown-menu {
+                width: 244px;
+
+                .dell-item {
+                    color: #FF5630;
+                }
+
+                span {
+                    white-space: break-spaces;
+                }
+
+            }
+        }
+    }
+}
+.last-login {
+    background-color: #c4c4c4;
+    color: var(--bs-primary);
+}
+.two-step-verification {
+    background-color: #DFFFEA;
+    color: #17C653;
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
