@@ -9,7 +9,6 @@ import {
 import { Field, Form, Formik } from 'formik';
 import DocumentTable from './userTableData/userName';
 import simbleprofile from '@/app/assets/media/avatar/300-6.jpg';
-import Actions from './TableAction/Actions';
 import MoreOption from './TableAction/MoreOption';
 import { Table } from 'react-bootstrap';
 import Roles from './userTableData/Roles';
@@ -18,20 +17,8 @@ import TwoStepVerification from './userTableData/TwoStepVerification';
 import UserLastLogin from './userTableData/UserLastLogin';
 import Search from '../Search/Search';
 import Button from '../Button/Button';
-import { FaCoffee, FaFilter } from 'react-icons/fa';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import {faCircle} from '@fortawesome/fontawesome-free-solid';
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
-// import "@fortawesome/fontawesome-free/scss/";
-// import 'font-awesome/css/';
 import 'font-awesome/css/font-awesome.min.css';
-
-// import '@fortawesome/fontawesome-free-solid/.'
-
-
 
 type Person = {
     // firstName: JSX.Element;
