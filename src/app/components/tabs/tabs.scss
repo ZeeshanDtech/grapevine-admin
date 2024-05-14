@@ -1,0 +1,28 @@
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 16px;
+    .nav-item {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            border: none;
+            font-size: 14px;
+            color: var(--bs-danger);
+            padding: 5px 20px;
+            background: #edebeb;
+            border-radius: 15px;
+
+            &.active {
+                background: var(--bs-secondary);
+                color: var(--bs-white);
+            }
+
+            &:hover {
+                background: var(--bs-secondary);
+                color: var(--bs-white);
+            }
+        }
+    }
+}
